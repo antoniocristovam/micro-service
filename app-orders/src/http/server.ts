@@ -1,5 +1,4 @@
 import "@opentelemetry/auto-instrumentations-node/register";
-import { trace } from "@opentelemetry/api";
 import { setTimeout } from "node:timers/promises";
 
 import { fastify } from "fastify";
