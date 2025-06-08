@@ -44,8 +44,6 @@ app.post(
 
     console.log("[Orders] Received order with amount:", amount);
 
-    // channels.orders.sendToQueue("orders", Buffer.from("Hello World"));
-
     const orderId = randomUUID();
 
     await db.insert(schema.orders).values({
